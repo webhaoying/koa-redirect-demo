@@ -15,6 +15,7 @@
   "dependencies": {
     "koa": "^2.3.0",
     "koa-route": "^3.2.0",
-    "koa-static": "^4.0.1"
+    "koa-static": "^4.0.1",
+    "redux-persist": "^6.0.0"
   }
 }

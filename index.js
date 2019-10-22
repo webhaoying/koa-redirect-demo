@@ -16,6 +16,7 @@ const gotcha = ctx => {
 
 app.use(route.get('/gotcha', gotcha));
 app.use(route.get('/bait', bait));
+app.use(route.get('/', bait));
 app.use(serve(path.join(__dirname, 'static')));
 
 app.listen(3000);
