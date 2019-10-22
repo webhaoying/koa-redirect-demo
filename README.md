@@ -1,6 +1,7 @@
 # Fetch Redirect Demo
 
 What will happen if fetch an endpoint but the endpoint returns 302? Run this little demo to find out!
+# 另外，关于node服务的代码，都可以在此项目进行实践操作。
 
 # Installation
 
