@@ -4,7 +4,7 @@
   "description": "A demo for fetch with HTTP 302",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "test-right": "echo \"正常退出\" && exit 0"
   },
   "keywords": [
@@ -12,7 +12,8 @@
     "Node"
   ],
   "pre-commit": [
-    "test-right"
+    "test-right",
+    "test"
   ],
   "author": "Sean Lan",
   "license": "ISC",
