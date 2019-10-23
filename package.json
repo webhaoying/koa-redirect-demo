@@ -4,18 +4,25 @@
   "description": "A demo for fetch with HTTP 302",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-right": "echo \"正常退出\" && exit 0"
   },
   "keywords": [
     "Koa",
     "Node"
   ],
+  "pre-commit": [
+    "test-error",
+    "test-right"
+  ],
   "author": "Sean Lan",
   "license": "ISC",
   "dependencies": {
+    "eslint-config-yhcsx": "^1.1.4",
     "koa": "^2.3.0",
     "koa-route": "^3.2.0",
     "koa-static": "^4.0.1",
+    "pre-commit": "^1.2.2",
     "redux-persist": "^6.0.0"
   }
 }
