@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "test-right": "echo \"正常退出\" && exit 0"
+    "test-right": "echo \"正常退出\" && exit 0",
+    "lint": "eslint src/*"
   },
   "keywords": [
     "Koa",
@@ -13,12 +14,17 @@
   ],
   "pre-commit": [
     "test-right",
-    "test"
+    "test",
+    "lint"
   ],
   "author": "Sean Lan",
   "license": "ISC",
   "dependencies": {
-    "eslint-config-yhcsx": "^1.1.4",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^6.5.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-react": "^7.0.1",
     "koa": "^2.3.0",
     "koa-route": "^3.2.0",
     "koa-static": "^4.0.1",
